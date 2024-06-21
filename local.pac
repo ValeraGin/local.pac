@@ -990,6 +990,7 @@ function FindProxyForURL(url, host) {
 	}
 	catch (e) {
 		alert('Error', e);
+	    throw e;
 		return "DIRECT";
 	}
 
