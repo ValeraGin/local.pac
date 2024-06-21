@@ -984,7 +984,7 @@ function FindProxyForURL(url, host) {
   }
 
 	try {
-		if (dnsDomainIs(host, ".chatgpt.com") | dnsDomainIs(host, ".openai.com") || dnsDomainIs(host, ".oaisstatic.com")) {
+		if (shExpMatch(host, "*chatgpt.com") | shExpMatch(host, "*openai.com") || shExpMatch(host, "*oaisstatic.com")) {
 			return "SOCKS5 127.0.0.1:1086; SOCKS 127.0.0.1:1086; DIRECT;";
 		}
 	}
