@@ -983,5 +983,9 @@ function FindProxyForURL(url, host) {
     return "SOCKS5 127.0.0.1:1086; SOCKS 127.0.0.1:1086; DIRECT;";
   }
 
+  if (isDomainHost(host, "openai.com") || isDomainHost(host, "oaisstatic")) {
+  	return "SOCKS5 127.0.0.1:1086; SOCKS 127.0.0.1:1086; DIRECT;";
+  }
+
   return "DIRECT";
 }
