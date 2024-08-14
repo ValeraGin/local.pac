@@ -982,7 +982,13 @@ function FindProxyForURL(url, host) {
     // By doing this, you harm the service!
     return "SOCKS5 127.0.0.1:1086; SOCKS 127.0.0.1:1086; DIRECT;";
   }
-	if (shExpMatch(host, "*chatgpt.com") || shExpMatch(host, "*openai.com") || shExpMatch(host, "*oaistatic.com") || shExpMatch(host, "*ionicframework.com/") || shExpMatch(host, "*medium.com") || shExpMatch(host, "*googlevideo.com") || shExpMatch(host, "*youtube.com")) {
+	if (
+		shExpMatch(host, "*chatgpt.com") || shExpMatch(host, "*openai.com") || shExpMatch(host, "*oaistatic.com")
+		|| shExpMatch(host, "*ionicframework.com/")
+		|| shExpMatch(host, "*medium.com")
+		|| shExpMatch(host, "*googlevideo.com") || shExpMatch(host, "*youtube.com") || shExpMatch(host, "*ggpht.com")
+		|| shExpMatch(host, "*spotify.com")
+	) {
 		return "SOCKS5 127.0.0.1:1086; SOCKS 127.0.0.1:1086; DIRECT;";
 	}
 	return "DIRECT";
