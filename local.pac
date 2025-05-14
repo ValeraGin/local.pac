@@ -913,7 +913,7 @@ function FindProxyForURL(url, host) {
           'yt3.ggpht.com'
           ];
   if (fbtw.indexOf(shost) !== -1) {
-    return "PROXY 127.0.0.1:1080; DIRECT";
+    return "SOCKS5 127.0.0.1:1086; SOCKS 127.0.0.1:1086; DIRECT;";
   }
 
   var curdomain = shost.match(/(.*)\.([^.]+$)/);
