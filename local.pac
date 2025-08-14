@@ -986,6 +986,7 @@ function FindProxyForURL(url, host) {
 		shExpMatch(host, "*chatgpt.com") || shExpMatch(host, "*openai.com") || shExpMatch(host, "*oaistatic.com")
 		|| shExpMatch(host, "*ionicframework.com/")
 		|| shExpMatch(host, "*medium.com")
+		|| shExpMatch(host, "*netflix.com")
 		|| shExpMatch(host, "*googlevideo.com") || shExpMatch(host, "*youtube.com") || shExpMatch(host, "*ggpht.com") || shExpMatch(host, "*ytimg.com")
 		|| shExpMatch(host, "*spotify.com")
 	) {
