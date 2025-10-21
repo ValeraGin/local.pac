@@ -961,6 +961,7 @@ function FindProxyForURL(url, host) {
 		|| shExpMatch(host, "*netflix.com")
 		|| shExpMatch(host, "*googlevideo.com") || shExpMatch(host, "*youtube.com") || shExpMatch(host, "*ggpht.com") || shExpMatch(host, "*ytimg.com")
 		|| shExpMatch(host, "*spotify.com")
+		|| shExpMatch(host, "*themoviedb.org") || shExpMatch(host, "*tmdb.org")
 	) {
 		return "SOCKS5 127.0.0.1:1086; SOCKS 127.0.0.1:1086; DIRECT;";
 	}
