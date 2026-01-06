@@ -1454,7 +1454,8 @@ var PROXY_DOMAINS = [
     "*.trae.ai",
     "*.mchost.guru",
     "*.t3.chat",
-    "*.x.ai"
+    "*.x.ai",
+	"*.redis.io"
 ];
 
 	function matchDomain(host, domains) {
