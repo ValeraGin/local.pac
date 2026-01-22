@@ -913,7 +913,7 @@
 			'yt3.ggpht.com'
 			];
 	if (fbtw.indexOf(shost) !== -1) {
-		return "SOCKS5 127.0.0.1:1086; SOCKS 127.0.0.1:1086; DIRECT;";
+		return "SOCKS5 127.0.0.1:1087; SOCKS 127.0.0.1:1086; DIRECT;";
 	}
 
 	var curdomain = shost.match(/(.*)\.([^.]+$)/);
@@ -952,7 +952,7 @@
 		// You should NOT use these proxy servers outside of PAC file!
 		// DO NOT enter it manually in any program!
 		// By doing this, you harm the service!
-		return "SOCKS5 127.0.0.1:1086; SOCKS 127.0.0.1:1086; DIRECT;";
+		return "SOCKS5 127.0.0.1:1087; SOCKS 127.0.0.1:1086; DIRECT;";
 	}
 
 var PROXY_DOMAINS = [
@@ -1448,7 +1448,7 @@ function matchDomain(host, domains) {
 }
 
 		if (matchDomain(host, PROXY_DOMAINS)) {
-			return "SOCKS5 127.0.0.1:1086; SOCKS 127.0.0.1:1086; DIRECT;";
+			return "SOCKS5 127.0.0.1:1087; SOCKS 127.0.0.1:1086; DIRECT;";
 		}
 
 		return "DIRECT";
